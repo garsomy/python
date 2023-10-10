@@ -1,0 +1,160 @@
+#Первое задание
+
+firstNum = int(input('Введите число:'))
+secondNum = (firstNum + 1)
+thirdNum = (secondNum + 1)
+
+print('Первое число:',firstNum,'Второе число:',secondNum,'Третье число:',thirdNum)
+
+#Второе задание
+
+firstNum = int(input('Введите первое число:'))
+secondNum = int(input('Введите второе число:'))
+thirdNum = int(input('Введите третье число:'))
+
+sum = (firstNum + secondNum + thirdNum)
+
+print(sum)
+
+#Третье задание
+
+num = int(input('Введите длину ребра:'))
+
+volume = (num ** 3)
+square = (6 * num ** 2)
+
+print('Объем куба:',volume,'\nПлощадь полной поверхности:',square)
+
+#Четвертое задание
+
+a = int(input('Введите первое число:'))
+b = int(input('Введите второе число:'))
+
+func = (3 * (a + b) ** 3 + 275 * b ** 2 - 127 * a - 41)
+
+print('Функция a и b равна ', func)
+
+#Пятое задание
+
+num = int(input('Введите число:'))
+
+backNum = (num - 1)
+forwardNum = (num + 1)
+
+print('Следующее за числом', num ,'число:', forwardNum, '\nДля числа', num ,'предыдущее число:', backNum)
+
+#Шестое задание
+
+display = int(input('Введите стоимость 1 монитора:'))
+pc = int(input('Введите стоимость 1 системного блока:'))
+keyboard = int(input('Введите стоимость 1 клавиатуры:'))
+mouse = int(input('Введите стоимость 1 мыши:'))
+
+print('Стоимость трёх ПК составила: ', 3 * (display + pc + keyboard + mouse))
+
+#Седьмое задание
+
+a_1 = int(input('Введите первый член прогрессии:'))
+d = int(input('Введите число d:'))
+n = int(input('Введите число n:'))
+
+sum = (a_1 + d * (n-1))
+
+print(sum)
+
+#Восьмое задание
+
+num = int(input('Введите число:'))
+
+print(num,'---', num * 2 ,'---', num * 3 ,'---', num * 4 ,'---', num * 5,)
+
+#Девятое задание
+
+people = int(input('Ведите кол-во школьников '))
+mandarin = int(input('Введите кол-во мандаринов '))
+
+print(mandarin // people ,'апельсинов достанется каждому школнику')
+print(mandarin % people ,'апельсинов останется в корзине')
+
+#Десятое задание
+
+from math import ceil
+
+people = int(input('Введите население планеты: '))
+
+print(ceil(people / 2))
+
+#Одинадцатое задание
+
+minute = int(input('Введите минуты: '))
+
+print(minute, 'мин - это', minute // 60 ,'час(-а, -ов)', minute % 60 ,'минут(-ы)')
+
+#Двенадцатое задание
+
+firstNum = int(input('Введите первое число: '))
+secondNum = int(input('Введите второе число: '))
+thirdNum = int(input('Введите третье число: '))
+
+print('Сумма цифр =', firstNum + secondNum + thirdNum ,'\nПроизведение цифр =', firstNum * secondNum * thirdNum)
+
+#Тринадцатое задание
+
+num = int(input('Введите кол-во повторов: '))
+
+if num > 9:
+    print('Введите число от 1 до 9')
+else:
+    print('   _~_    ' * int(num))
+    print('  (o o)   ' * int(num))
+    print(' /  V  \\  ' * int(num))
+    print('/(  _  )\\ ' * int(num))
+    print('  ^^ ^^   ' * int(num))
+
+#Четырнадцатое задание
+
+num = int(input("Введите число: "))
+
+if num < 10:
+    sec_num = 0
+else:
+    print('Вторая цифра с права: ', (num // 10) % 10)
+
+#Пятнадцатое задание
+
+minute = int(input('Введите минуты:'))
+
+print(minute // 60, minute % 60)
+
+#Шестнадцатое задание
+
+num = int(input("Введите 0 или 1: "))
+
+if num == 1:
+    print('0')
+else:
+    print('1')
+
+#Семнадцатое задание
+
+num = int(input("Введите число: "))
+
+if num < 0:
+    print('1')
+else:
+    print((num // 2 + 1 ) * 2)
+
+#Восемнадцатое задание
+
+speed = int(input('Введите скорость скорости: '))
+time = int(input('Введите время: '))
+
+s = speed * time
+print('Отметка, на которой остановится Вася:', s % 109)
+
+#Девятнадцатое задание
+
+h = int(input('Введите высоту шеста:'))
+a = int(input('На сколько метров улитка поднимается за день:'))
+b = int(input('На сколько метров улитка спускается за день:'))
+print((h - a) // (a - b) + 1)
